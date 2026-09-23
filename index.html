@@ -7,16 +7,16 @@
 	<title>Náš vývojářský tým</title>
 	<style>
 		:root {
-			--ink: #17201b;
-			--muted: #647169;
-			--paper: #f4f7f2;
-			--card: #ffffff;
-			--line: #dce6dc;
-			--purple: #79339b;
-			--purple-dark: #411552;
-			--blue-dark: #50a0d5;
-			--blue-light: #549cf3;
-			--shadow: 0 18px 50px rgba(19, 52, 32, 0.10);
+			--ink: #f0f6fc;           /* Světlý text */
+			--muted: #8b9eb0;         /* Šedomodrý text */
+			--paper: #0f172a;         /* Tmavě modré pozadí */
+			--card: #1e293b;          /* Modro-šedé karty */
+			--line: #334155;          /* Tmavší ohraničení */
+			--purple: #c084fc;        /* Fialová pro akcenty */
+			--purple-dark: #1e1b4b;   /* Tmavě fialová/modrá Hero sekce */
+			--blue-dark: #38bdf8;     /* Zářivě modrá */
+			--blue-light: #60a5fa;    /* Světlejší modrá */
+			--shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
 		}
 
 		* { box-sizing: border-box; }
@@ -40,7 +40,7 @@
 
 		header {
 			padding: 22px 0;
-			background: rgba(244, 247, 242, 0.92);
+			background: var(--paper);
 		}
 
 		.nav {
@@ -148,7 +148,7 @@
 		.terminal-bar i { width: 8px; height: 8px; border-radius: 50%; background: #ff8060; }
 		.terminal-bar i:nth-child(2) { background: #f4c95d; }
 		.terminal-bar i:nth-child(3) { background: #71cf78; }
-		.terminal code { display: block; margin: 10px 0; color: #d6e6d9; }
+		.terminal code { display: block; margin: 10px 0; color: var(--ink); }
 		.terminal .prompt { color: var(--blue-dark); }
 		.terminal .comment { color: #e29fe5; }
 
@@ -175,9 +175,9 @@
 		.member-info p { margin: 0; color: var(--muted); }
 		.role { margin-bottom: 12px !important; color: var(--purple) !important; font: 700 .75rem Consolas, monospace; letter-spacing: .07em; text-transform: uppercase; }
 
-		.workflow { background: #e8f0e6; }
+		.workflow { background: #241442; }
 		.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; counter-reset: step; }
-		.step { position: relative; padding: 24px 20px; border-top: 2px solid var(--purple); background: rgba(255,255,255,.56); }
+		.step { position: relative; padding: 24px 20px; border-top: 2px solid var(--purple); background: #1e1b34; }
 		.step::before { counter-increment: step; content: "0" counter(step); color: var(--purple); font: 700 .8rem Consolas, monospace; }
 		.step h3 { margin: 22px 0 8px; font-size: 1.2rem; }
 		.step p { margin: 0; color: var(--muted); font-size: .92rem; }
