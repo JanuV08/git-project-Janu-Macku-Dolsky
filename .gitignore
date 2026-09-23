@@ -1,0 +1,11 @@
+# Systémové soubory
+.DS_Store
+Thumbs.db
+
+# Složky vývojových nástrojů
+.vscode/
+.idea/
+
+# Případné lokální zálohy nebo tajné soubory
+*.log
+.env
