@@ -167,6 +167,13 @@
 		.info-card p { margin-bottom: 0; color: var(--muted); }
 		.team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 		.member { overflow: hidden; border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow); }
+		.member img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block; }
+		.member:nth-child(2) img {
+            object-position: center 15%;}
 		.member-photo { display: grid; min-height: 230px; place-items: center; color: var(--purple-dark); background: #dcebd9; font: 700 .8rem Consolas, monospace; letter-spacing: .08em; text-transform: uppercase; }
 		.member:nth-child(2) .member-photo { background: #f8dfc7; }
 		.member:nth-child(3) .member-photo { background: #dce3f2; }
@@ -251,9 +258,15 @@
 					<p>Každý z nás přináší jiný pohled, dovednosti a energii. Dohromady posouváme projekt od nápadu k výsledku.</p>
 				</div>
 				<div class="team">
-					<article class="member"><div class="member-photo">Fotka doplníme</div><div class="member-info"><p class="role">Manažer</p><h3>Vojtěch Janů</h3><p>Má na starosti vedení týmu, koordinaci práce, programování a tvorbu webu.</p></div></article>
-					<article class="member"><div class="member-photo">Fotka doplníme</div><div class="member-info"><p class="role">Programátor</p><h3>Radek Macků</h3><p>Stará se o programování, tvorbu obsahu a testování webu. Dbá na jeho přehlednost, funkčnost a další rozvoj.</p></div></article>
-					<article class="member"><div class="member-photo">Fotka doplníme</div><div class="member-info"><p class="role">Designer</p><h3>Michal Dolský</h3><p>Jeho práce je design a vizuální podoba webu, aby byl přehledný a příjemný pro uživatele.</p></div></article>
+					<article class="member">
+						<img src="assets/IMG_0609.JPG" alt="Vojtěch Janů">
+						<div class="member-info"><p class="role">Vývojář 01</p><h3>Jméno prvního člena</h3><p>Krátké představení, zaměření a role v projektu.</p></div></article>
+					<article class="member">
+						<img src="assets/radekflorbal.png" alt="Radek Macků">
+						<div class="member-info"><p class="role">Vývojář 02</p><h3>Jméno druhého člena</h3><p>Krátké představení, zaměření a role v projektu.</p></div></article>
+					<article class="member">
+						<img src="assets/C4F780A4-45E0-4C12-A764-A0D42BFE01D8.JPG" alt="Michal Dolský">
+						<div class="member-info"><p class="role">Vývojář 03</p><h3>Jméno třetího člena</h3><p>Krátké představení, zaměření a role v projektu.</p></div></article>
 				</div>
 			</div>
 		</section>
