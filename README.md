@@ -81,6 +81,8 @@ Ukázka části zdrojového kódu, která vytváří odkaz na představení tým
 ```html
 <a class="button" href="#tym">Poznat náš tým</a>
 ```
+Screenshot webu:
+![Screenshot webu](./assets/Snímek%20obrazovky%202026-09-24%20154022.png)
 
 ## Pracovní postup týmu
 
